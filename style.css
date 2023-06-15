@@ -1,0 +1,75 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: black;
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 2px;
+    color: #fff;
+}
+
+.navbar div:hover{
+    background: #ccc;
+    padding: 3px;
+    border-radius: 3px;
+    color: #fff;
+    transition: 2s linear;
+}
+
+.navbar a:hover{
+    color: black;
+}
+.logo{
+    text-shadow: 2px 2px 2px purple;
+    font-family: cursive;
+    color: #fff;
+}
+
+.burger div{
+    border: 2px solid #fff;
+}
+input{
+    padding: 1rem;
+    margin: 1rem;
+    width: 30rem;
+    background: black;
+    color: #fff;
+}
+
+div input{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+}
+
+
+#button{
+    background: blue;
+    width: 20%;
+}
+
+.button{
+     display: flex;
+    justify-content: center;
+}
