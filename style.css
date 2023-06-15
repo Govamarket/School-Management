@@ -1,75 +1,85 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
-body{
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background: black;
+body {
+  background: #ccc;
 }
 
-.navbar a{
-    text-decoration: none;
-    font-size: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 2px;
-    color: #fff;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  /* padding-bottom: 2rem; */
 }
 
-.navbar div:hover{
+.navbar a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 50px;
+  color: #fff;
+  text-shadow: 3px 3px 3px navy;
+}
+
+nav {
+  padding: 1rem;
+  padding-top: 1rem;
+}
+
+.navbar a:hover {
+  color: rgb(171, 164, 164);
+}
+.logo {
+  text-shadow: 3px 3px 3px purple;
+  font-family: cursive;
+  color: #fff;
+}
+
+input {
+  padding: 1rem;
+  margin: 1rem;
+  width: 30rem;
+  background: black;
+  color: #fff;
+  outline: none;
+  text-align: center;
+}
+input:hover {
+  background: #ccc;
+  color: black;
+}
+
+div input {
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  place-content: center;
+  background-blend-mode: color-burn;
+  margin: 1rem;
+}
+
+#button {
+  background: #fff;
+  width: 20%;
+  outline: 0;
+  color: #f11c1c;
+  text-shadow: 4px 4px 4px red;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#button:hover {
+    color: blue;
     background: #ccc;
-    padding: 3px;
-    border-radius: 3px;
-    color: #fff;
-    transition: 2s linear;
+    text-shadow: 5px 5px 5px blue;
 }
-
-.navbar a:hover{
-    color: black;
-}
-.logo{
-    text-shadow: 2px 2px 2px purple;
-    font-family: cursive;
-    color: #fff;
-}
-
-.burger div{
-    border: 2px solid #fff;
-}
-input{
-    padding: 1rem;
-    margin: 1rem;
-    width: 30rem;
-    background: black;
-    color: #fff;
-}
-
-div input{
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-}
-
-.container{
-    display: grid;
-    grid-template-columns: auto;
-    place-content: center;
-}
-
-
-#button{
-    background: blue;
-    width: 20%;
-}
-
-.button{
-     display: flex;
-    justify-content: center;
+.button {
+  display: flex;
+  justify-content: center;
 }
