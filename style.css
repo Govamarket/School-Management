@@ -83,6 +83,23 @@ div input {
   color: #1c19d6;
   font-family: Arial, Helvetica, sans-serif;
 }
+.dropdown-menu{
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+}
+
+.dropdown-menu li{
+list-style: none;
+padding: 10px;
+border-radius: 1rem;
+text-transform: uppercase;
+}
+
+.dropdown-menu li a{
+  text-shadow: 3px 3px 3px purple;
+  font-family: monospace;
+}
 
 #button:hover {
     color: blue;
@@ -95,32 +112,18 @@ div input {
 }
 
 
-.dropdown-menu{
-  text-align: center;
-  width: 10rem;
-  padding: 1rem;
-  position: fixed;
-  border-radius: 2rem;
-}
+@media only screen and (max-width: 780px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+    background-blend-mode: color-burn;
+    margin: 1rem;
+    position: relative;
+  }
 
-.dropdown-menu li{
-list-style: none;
-padding: 10px;
-border-radius: 1rem;
-text-transform: uppercase;
-text-overflow: ellipsis;
-}
-
-.dropdown-menu li a{
-  text-shadow: 3px 3px 3px purple;
-  font-family: monospace;
-}
-
-
-.dropdown-menu :hover{
-  display: block;
-  /* background: #ccc; */
-  transition: all 1s linear;
-  transform: translateX(10%);
+  .dropdown{
+    display: none;
+  }
 }
 
