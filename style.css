@@ -42,7 +42,7 @@ nav {
 
 input {
   padding: 1rem;
-  margin: 1rem;
+  margin: 3px;
   width: 30rem;
   background: #fff;
   color: black;
@@ -52,6 +52,7 @@ input {
   background-image: url(./img/soso.jpg);
  background-attachment: fixed;
  background-size: 30rem;
+ position: relative;
 }
 input:hover {
   background: #ccc;
@@ -63,6 +64,7 @@ div input {
   border-top-right-radius: 2rem;
   border-bottom-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  position: relative;
 }
 
 .container {
@@ -71,6 +73,7 @@ div input {
   place-content: center;
   background-blend-mode: color-burn;
   margin: 1rem;
+  position: relative;
 }
 
 #button {
