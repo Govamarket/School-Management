@@ -121,7 +121,9 @@ div input {
   justify-content: center;
 }
 
-@media only screen and (max-width: 768px) {
+/* My media query */
+
+@media only screen and (max-width: 620px) {
   .container {
     display: grid;
     grid-template-columns: auto;
@@ -148,5 +150,20 @@ div input {
   .navbar{
     display: flex;
     justify-content: space-between;
+  }
+
+  input {
+    padding: 1rem;
+    margin: 3px;
+    width: 15rem;
+    background: #fff;
+    color: black;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+    background-image: url(./img/soso.jpg);
+    background-attachment: fixed;
+    background-size: 30rem;
+    position: absolute;
   }
 }
