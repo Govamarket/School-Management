@@ -36,7 +36,7 @@ nav {
 }
 .logo {
   text-shadow: 3px 3px 3px purple;
-  font-family: cursive;
+  font-family: monospace;
   color: #fff;
 }
 
@@ -93,7 +93,6 @@ div input {
 
 
 .dropdown-menu{
-  /* display: none; */
   text-align: center;
   width: 10rem;
   padding: 1rem;
@@ -103,14 +102,22 @@ div input {
 
 .dropdown-menu li{
 list-style: none;
-text-shadow: 3px 3px 3px #ccc;
-padding: 1rem;
+padding: 10px;
 border-radius: 1rem;
+text-transform: uppercase;
+text-overflow: ellipsis;
+}
+
+.dropdown-menu li a{
+  text-shadow: 3px 3px 3px purple;
+  font-family: monospace;
 }
 
 
 .dropdown-menu :hover{
   display: block;
-  background: red;
+  /* background: #ccc; */
+  transition: all 1s linear;
+  transform: translateX(10%);
 }
 
