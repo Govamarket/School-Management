@@ -9,8 +9,6 @@ body {
  
 }
 
-
-
 .nav-lists {
  display: flex;
  justify-content: space-around;
@@ -38,6 +36,19 @@ nav {
   text-shadow: 3px 3px 3px purple;
   font-family: monospace;
   color: #fff;
+}
+
+/* The burger place */
+.burger {
+  /* display: none; */
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  transition: all 0.3 ease;
 }
 
 input {
@@ -112,7 +123,7 @@ text-transform: uppercase;
 }
 
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: auto;
