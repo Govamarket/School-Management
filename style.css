@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 body {
-  background: #ccc;
+ background-blend-mode: hard-light;
+ background: blue;
+ 
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  /* padding-bottom: 2rem; */
+
+
+.nav-lists {
+ display: flex;
+ justify-content: space-around;
+  margin-left: 4rem;
 }
 
 .navbar a {
@@ -40,10 +44,14 @@ input {
   padding: 1rem;
   margin: 1rem;
   width: 30rem;
-  background: black;
-  color: #fff;
+  background: #fff;
+  color: black;
+  font-size: 1rem;
   outline: none;
   text-align: center;
+  background-image: url(./img/soso.jpg);
+ background-attachment: fixed;
+ background-size: 30rem;
 }
 input:hover {
   background: #ccc;
@@ -66,11 +74,10 @@ div input {
 }
 
 #button {
-  background: #fff;
+  background: #ccc;
   width: 20%;
   outline: 0;
-  color: #f11c1c;
-  text-shadow: 4px 4px 4px red;
+  color: #1c19d6;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -83,3 +90,27 @@ div input {
   display: flex;
   justify-content: center;
 }
+
+
+.dropdown-menu{
+  /* display: none; */
+  text-align: center;
+  width: 10rem;
+  padding: 1rem;
+  position: fixed;
+  border-radius: 2rem;
+}
+
+.dropdown-menu li{
+list-style: none;
+text-shadow: 3px 3px 3px #ccc;
+padding: 1rem;
+border-radius: 1rem;
+}
+
+
+.dropdown-menu :hover{
+  display: block;
+  background: red;
+}
+
