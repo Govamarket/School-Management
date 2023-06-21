@@ -4,14 +4,13 @@
   box-sizing: border-box;
 }
 body {
- background-blend-mode: hard-light;
- background: blue;
- 
+  background-blend-mode: hard-light;
+  background: blue;
 }
 
 .nav-lists {
- display: flex;
- justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
   margin-left: 4rem;
 }
 
@@ -40,7 +39,7 @@ nav {
 
 /* The burger place */
 .burger {
-  /* display: none; */
+  display: none;
   cursor: pointer;
 }
 .burger div {
@@ -61,9 +60,9 @@ input {
   outline: none;
   text-align: center;
   background-image: url(./img/soso.jpg);
- background-attachment: fixed;
- background-size: 30rem;
- position: relative;
+  background-attachment: fixed;
+  background-size: 30rem;
+  position: relative;
 }
 input:hover {
   background: #ccc;
@@ -94,34 +93,33 @@ div input {
   color: #1c19d6;
   font-family: Arial, Helvetica, sans-serif;
 }
-.dropdown-menu{
+.dropdown-menu {
   text-align: center;
   padding: 1rem;
   position: fixed;
 }
 
-.dropdown-menu li{
-list-style: none;
-padding: 10px;
-border-radius: 1rem;
-text-transform: uppercase;
+.dropdown-menu li {
+  list-style: none;
+  padding: 10px;
+  border-radius: 1rem;
+  text-transform: uppercase;
 }
 
-.dropdown-menu li a{
+.dropdown-menu li a {
   text-shadow: 3px 3px 3px purple;
   font-family: monospace;
 }
 
 #button:hover {
-    color: blue;
-    background: #ccc;
-    text-shadow: 5px 5px 5px blue;
+  color: blue;
+  background: #ccc;
+  text-shadow: 5px 5px 5px blue;
 }
 .button {
   display: flex;
   justify-content: center;
 }
-
 
 @media only screen and (max-width: 768px) {
   .container {
@@ -133,8 +131,22 @@ text-transform: uppercase;
     position: relative;
   }
 
-  .dropdown{
+  .dropdown {
     display: none;
   }
-}
 
+  .nav-lists {
+    display: none;
+    justify-content: space-around;
+    margin-left: 4rem;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+  }
+}
