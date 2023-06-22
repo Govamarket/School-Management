@@ -73,7 +73,6 @@ input:hover {
   color: black;
 }
 
-
 div input {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -95,6 +94,7 @@ div input {
   text-align: center;
   padding: 1rem;
   position: fixed;
+  visibility: hidden;
 }
 
 .dropdown-menu li {
@@ -190,7 +190,7 @@ div kbd {
   .control {
     display: flex;
     justify-content: center;
-    margin-left: 5%;
+    margin-left: 0%;
     gap: 1rem;
   }
 }

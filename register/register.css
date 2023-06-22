@@ -1,0 +1,205 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  }
+  /* body* */
+  body {
+    background-blend-mode: overlay;
+    background: #350568;
+  }
+  
+  /* Navlist* */
+  .nav-lists {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 4rem;
+  }
+  
+  /* navbar achor tags* */
+  .navbar a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50px;
+    color: #fff;
+    text-shadow: 3px 3px 3px navy;
+  }
+  
+  nav {
+    padding: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .navbar a:hover {
+    color: rgb(171, 164, 164);
+  }
+  .logo {
+    text-shadow: 3px 3px 3px purple;
+    font-family: monospace;
+    color: #fff;
+  }
+  
+  /* The burger place */
+  .burger {
+    display: none;
+    cursor: pointer;
+  }
+  /* burger divs */
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+    transition: all 0.3 ease;
+  }
+
+  .header h1{
+    text-align: center;
+    color: #fff;
+    padding-top: 8px;
+    font-weight: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* inputs login* */
+  input {
+    padding: 1rem;
+    margin: 3px;
+    width: 30rem;
+    background: #fff;
+    color: black;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+    background-image: url(./img/soso.jpg);
+    background-attachment: fixed;
+    background-size: 30rem;
+    position: relative;
+  }
+  input:hover {
+    background: #ccc;
+    color: black;
+  }
+  
+  
+  div input {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: relative;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+    background-blend-mode: color-burn;
+    margin: 1rem;
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+  }
+  
+  .dropdown-menu li {
+    list-style: none;
+    padding: 10px;
+    border-radius: 1rem;
+    text-transform: uppercase;
+  }
+  
+  .dropdown-menu li a {
+    text-shadow: 3px 3px 3px purple;
+    font-family: monospace;
+  }
+  
+  .control {
+    margin-left: 38%;
+  }
+  button {
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 1rem;
+    outline: none;
+  }
+  
+  #signup {
+    outline: 0;
+    color: #350568;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+  }
+  
+  #signin {
+    outline: 0;
+    color: #350568;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+  }
+  
+  div kbd {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    color: #fff;
+    font-size: 10px;
+  }
+  
+  /* My media query */
+  
+  @media only screen and (max-width: 620px) {
+    .container {
+      display: grid;
+      grid-template-columns: auto;
+      place-content: center;
+      background-blend-mode: color-burn;
+      margin: 1rem;
+      position: relative;
+    }
+  
+    .dropdown {
+      display: none;
+    }
+  
+    .nav-lists {
+      display: none;
+      justify-content: space-around;
+      margin-left: 4rem;
+    }
+  
+    .burger {
+      display: block;
+    }
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    input {
+      padding: 1rem;
+      margin: 3px;
+      width: 15rem;
+      background: #fff;
+      color: black;
+      font-size: 1rem;
+      outline: none;
+      text-align: center;
+      background-image: url(./img/soso.jpg);
+      background-attachment: fixed;
+      background-size: 30rem;
+      position: absolute;
+    }
+  
+    .control {
+      display: flex;
+      justify-content: center;
+      margin-left: 0%;
+      gap: 1rem;
+    }
+  }
+  
