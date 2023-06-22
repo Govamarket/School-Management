@@ -3,17 +3,20 @@
   margin: 0%;
   box-sizing: border-box;
 }
+/* body* */
 body {
-  background-blend-mode: hard-light;
-  background: blue;
+  background-blend-mode: overlay;
+  background: #350568;
 }
 
+/* Navlist* */
 .nav-lists {
   display: flex;
   justify-content: space-around;
   margin-left: 4rem;
 }
 
+/* navbar achor tags* */
 .navbar a {
   text-decoration: none;
   font-size: 1.2rem;
@@ -42,6 +45,7 @@ nav {
   display: none;
   cursor: pointer;
 }
+/* burger divs */
 .burger div {
   width: 25px;
   height: 3px;
@@ -49,7 +53,7 @@ nav {
   margin: 5px;
   transition: all 0.3 ease;
 }
-
+/* inputs login* */
 input {
   padding: 1rem;
   margin: 3px;
@@ -69,6 +73,7 @@ input:hover {
   color: black;
 }
 
+
 div input {
   border-top-left-radius: 2rem;
   border-top-right-radius: 2rem;
@@ -86,13 +91,6 @@ div input {
   position: relative;
 }
 
-#button {
-  background: #ccc;
-  width: 20%;
-  outline: 0;
-  color: #1c19d6;
-  font-family: Arial, Helvetica, sans-serif;
-}
 .dropdown-menu {
   text-align: center;
   padding: 1rem;
@@ -111,14 +109,36 @@ div input {
   font-family: monospace;
 }
 
-#button:hover {
-  color: blue;
-  background: #ccc;
-  text-shadow: 5px 5px 5px blue;
+.control {
+  margin-left: 38%;
 }
-.button {
+button {
+  padding: 1rem;
+  width: 10rem;
+  border-radius: 1rem;
+  outline: none;
+}
+
+#signup {
+  outline: 0;
+  color: #350568;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+#signin {
+  outline: 0;
+  color: #350568;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+}
+
+div kbd {
   display: flex;
   justify-content: center;
+  margin: 2rem;
+  color: #fff;
+  font-size: 10px;
 }
 
 /* My media query */
@@ -147,7 +167,7 @@ div input {
     display: block;
   }
 
-  .navbar{
+  .navbar {
     display: flex;
     justify-content: space-between;
   }
@@ -165,5 +185,12 @@ div input {
     background-attachment: fixed;
     background-size: 30rem;
     position: absolute;
+  }
+
+  .control {
+    display: flex;
+    justify-content: center;
+    margin-left: 5%;
+    gap: 1rem;
   }
 }

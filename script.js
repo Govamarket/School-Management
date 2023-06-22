@@ -1,3 +1,4 @@
+// alert("hello world");
 const navBar = document.querySelector(".navbar");
 const navList = document.querySelector(".nav-lists");
 const dropDown = documnet.querySelector(".dropdown");
