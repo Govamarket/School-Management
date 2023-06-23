@@ -7,17 +7,27 @@
 body {
   background-blend-mode: overlay;
   background: #350568;
+  background-image: url(./img/soso.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
 }
 
 /* Navlist* */
 .nav-lists {
   display: flex;
   justify-content: space-around;
-  margin-left: 4rem;
+  /* margin-left: 3rem; */
+  gap: 3rem;
 }
 
 /* navbar achor tags* */
-.navbar a {
+.nav-lists a {
   text-decoration: none;
   font-size: 1.2rem;
   font-family: Arial, Helvetica, sans-serif;
@@ -31,13 +41,14 @@ nav {
   padding-top: 1rem;
 }
 
-.navbar a:hover {
+.nav-lists a:hover {
   color: rgb(171, 164, 164);
 }
 .logo {
   text-shadow: 3px 3px 3px purple;
   font-family: monospace;
   color: #fff;
+  margin-right: 10  rem;
 }
 
 /* The burger place */
@@ -86,7 +97,7 @@ div input {
   grid-template-columns: auto;
   place-content: center;
   background-blend-mode: color-burn;
-  margin: 1rem;
+  margin: 3rem;
   position: relative;
 }
 
@@ -143,7 +154,7 @@ div kbd {
 
 /* My media query */
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 768px) {
   .container {
     display: grid;
     grid-template-columns: auto;
@@ -193,4 +204,70 @@ div kbd {
     margin-left: 0%;
     gap: 1rem;
   }
+
+  body {
+  background-blend-mode: overlay;
+  /* background: #350568; */
+  background-image: url(./img/soso.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  background-position: cover;
+}
+
+.nav-lists {
+  width: 20%;
+  position: absolute;
+  right: 67%;
+  padding: 5rem;
+  height: 30rem;
+  top: 6vh;
+  padding-top: 1rem;
+  margin: 2rem;
+  background-color: rgb(17, 61, 172);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-190%);
+  transition: transform 1s ease-in;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  font-size: 4px;
+}
+
+.nav-lists li {
+  opacity: 1;
+}
+.burger {
+  display: block;
+}
+}
+
+.nav-active {
+transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+from {
+  opacity: 0;
+  transform: translateX(50px);
+}
+to {
+  opacity: 1;
+  transform: translateX(0px);
+}
+}
+
+.toggle .line1 {
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+opacity: 0;
+}
+
+.toggle .line3 {
+transform: rotate(45deg) translate(-5px, -6px);
+}
+
 }
