@@ -6,12 +6,10 @@
 /* body* */
 body {
   background-blend-mode: overlay;
-  background: #350568;
-  background-image: url(./img/soso.jpg);
+    background: #120123f0;
   background-repeat: no-repeat;
   background-position: fixed;
   background-size: cover;
-  height: 100rem;
 }
 nav{
   display: flex;
@@ -30,7 +28,7 @@ nav{
 /* navbar achor tags* */
 .nav-lists a {
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 14px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 50px;
   color: #fff;
@@ -47,9 +45,12 @@ nav {
 }
 .logo {
   text-shadow: 3px 3px 3px purple;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  margin-right: 10  rem;
+  font-size: 10px;
+  margin-right: 5rem;
+  margin: 5px;
+
 }
 
 /* The burger place */
@@ -64,6 +65,7 @@ nav {
   background-color: #fff;
   margin: 5px;
   transition: all 0.3 ease;
+  margin-left: 4rem;
 }
 /* inputs login* */
 input {
@@ -219,7 +221,7 @@ div kbd {
 .nav-lists {
   width: 20%;
   position: absolute;
-  right: 60%;
+  top: 60%;
   padding: 5rem;
   height: 30rem;
   top: 62vh;
@@ -271,4 +273,15 @@ opacity: 0;
 transform: rotate(45deg) translate(-5px, -6px);
 }
 
+.logo {
+  text-shadow: 3px 3px 3px purple;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 10px;
+  margin-right: 10rem;
+  margin: 5px;
+
 }
+
+}
+

@@ -18,21 +18,23 @@
   }
   
   /* navbar achor tags* */
-  .navbar a {
+  .nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 50px;
     color: #fff;
     text-shadow: 3px 3px 3px navy;
+    font-size: 15px;
+    font-family: 20rem;
   }
   
   nav {
     padding: 1rem;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
   }
   
-  .navbar a:hover {
+  .nav a:hover {
     color: rgb(171, 164, 164);
   }
   .logo {
@@ -41,6 +43,7 @@
     color: #fff;
     font-size: 12px;
     font-weight: 20rem;
+
   }
   
   /* The burger place */
@@ -53,7 +56,7 @@
     width: 25px;
     height: 3px;
     background-color: #fff;
-    margin: 5px;
+    margin: 3px;
     transition: all 0.3 ease;
   }
 
@@ -64,6 +67,26 @@
     font-weight: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
+  }
+
+  .dropdown-menu {
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+  }
+  
+  .dropdown-menu li {
+    list-style: none;
+    padding: 10px;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu li a {
+    text-shadow: 3px 3px 3px purple;
+    font-family: monospace;
+    font-size: 14px;
   }
   /* inputs login* */
   input {
@@ -106,23 +129,7 @@
     position: relative;
   }
   
-  .dropdown-menu {
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-  }
-  
-  .dropdown-menu li {
-    list-style: none;
-    padding: 10px;
-    border-radius: 1rem;
-    text-transform: uppercase;
-  }
-  
-  .dropdown-menu li a {
-    text-shadow: 3px 3px 3px purple;
-    font-family: monospace;
-  }
+ 
   
   .control {
     margin-left: 38%;
@@ -207,6 +214,9 @@
       justify-content: center;
       margin-left: 0%;
       gap: 1rem;
+    }
+    .logo{
+      margin-top: 1rem;
     }
   }
   
