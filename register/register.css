@@ -80,6 +80,9 @@
     background: #ccc;
     color: black;
   }
+  input a{
+    text-decoration: none;
+  }
   
   
   div input {
