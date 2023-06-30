@@ -72,9 +72,9 @@ nav {
 }
 /* inputs login* */
 input {
-  padding: 1rem;
+  padding: 3.5%;
   margin: 3px;
-  width: 34rem;
+  width: 25rem;
   background: #fff;
   color: black;
   font-size: 1rem;
@@ -124,10 +124,11 @@ div input {
 }
 
 .control {
-  margin-left: 40%;
+  margin-left: 42%;
+  top: 10rem;
 }
 button {
-  padding:4%;
+  padding:1.7%;
   width: 6rem;
   border-radius: 1rem;
   outline: none;
@@ -182,7 +183,7 @@ footer{
     display: block;
   }
 
-  .navbar {
+  nav {
     display: flex;
     justify-content: space-between;
   }
@@ -209,8 +210,8 @@ footer{
     gap: 1rem;
   }
 .nav-lists {
-  width: 20%;
-  position: absolute;
+  display: flex;
+  /* position: absolute; */
   right: 55%;
   padding: 5rem;
   height: 30rem;
@@ -224,8 +225,7 @@ footer{
   align-items: center;
   transform: translateY(-210%);
   transition: transform 1s ease-in;
-  border-top-right-radius: 4rem;
-  border-bottom-right-radius: 4rem;
+  
   font-size: 4px;
   margin-right: 3rem;
 }
