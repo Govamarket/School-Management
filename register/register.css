@@ -8,6 +8,9 @@
     background-blend-mode: overlay;
     background: #120123f0;
   }
+  nav :-ms-keyboard-active{
+    background: #fff;
+  }
   
   /* Navlist* */
   .nav-lists {
@@ -18,7 +21,7 @@
   }
   
   /* navbar achor tags* */
-  .nav a {
+  nav a {
     text-decoration: none;
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -63,16 +66,18 @@
   .header h3{
     text-align: center;
     color: #fff;
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-weight: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
+    text-shadow: 3px 3px 3px purple;
   }
 
   .dropdown-menu {
     text-align: center;
     padding: 1rem;
     position: fixed;
+    /* visibility: hidden; */
   }
   
   .dropdown-menu li {
@@ -132,11 +137,11 @@
  
   
   .control {
-    margin-left: 38%;
+    margin-left: 42%;
   }
   button {
     padding: 1rem;
-    width: 10rem;
+    width: 7rem;
     border-radius: 1rem;
     outline: none;
   }
@@ -175,10 +180,7 @@
       position: relative;
     }
   
-    .dropdown {
-      display: none;
-    }
-  
+ 
     .nav-lists {
       display: none;
       justify-content: space-around;

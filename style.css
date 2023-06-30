@@ -149,10 +149,10 @@ button {
   background: #fff;
 }
 
-div kbd {
+footer{
   display: flex;
   justify-content: center;
-  margin: 2rem;
+  margin: 1rem;
   color: #fff;
   font-size: 10px;
 }
@@ -229,7 +229,7 @@ div kbd {
   top: 4vh;
   padding-top: 1rem;
   margin: 2rem;
-  background-color: rgb(17, 61, 172);
+  background-color: rgb(1, 8, 28);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,6 +239,10 @@ div kbd {
   border-bottom-right-radius: 4rem;
   font-size: 4px;
   -ms-zoom-animation: unset;
+}
+
+nav a p:first-child{
+  font-size: 11px;
 }
 
 .nav-lists li {
