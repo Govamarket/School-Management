@@ -211,7 +211,7 @@ footer{
   }
 .nav-lists {
   display: flex;
-  /* position: absolute; */
+  position: absolute;
   right: 55%;
   padding: 5rem;
   height: 30rem;
