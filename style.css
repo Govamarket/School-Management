@@ -223,10 +223,11 @@ footer{
 .nav-lists {
   width: 20%;
   position: absolute;
-  right: 60%;
+  right: 55%;
   padding: 5rem;
   height: 30rem;
   top: 4vh;
+  color: #fff;
   padding-top: 1rem;
   margin: 2rem;
   background-color: rgb(1, 8, 28);
@@ -238,6 +239,7 @@ footer{
   border-top-right-radius: 4rem;
   border-bottom-right-radius: 4rem;
   font-size: 4px;
+  margin-right: 3rem;
 }
 
 
