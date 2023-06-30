@@ -4,17 +4,14 @@
   box-sizing: border-box;
 }
 /* body* */
-body {
- 
+ body {
     background-blend-mode: overlay;
     background: #350568;
     background-image: url(./img/soso.jpg);
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: cover;
-    background-position: cover;
-  
-  
+    background-position: cover; 
 }
 nav{
   display: flex;
@@ -77,16 +74,13 @@ nav {
 input {
   padding: 1rem;
   margin: 3px;
-  width: 30rem;
+  width: 34rem;
   background: #fff;
   color: black;
   font-size: 1rem;
   outline: none;
   text-align: center;
   background-image: url(./img/soso.jpg);
-  background-attachment: fixed;
-  background-size: 30rem;
-  position: relative;
 }
 input:hover {
   background: #ccc;
@@ -133,8 +127,8 @@ div input {
   margin-left: 40%;
 }
 button {
-  padding: 1rem;
-  width: 8rem;
+  padding:4%;
+  width: 6rem;
   border-radius: 1rem;
   outline: none;
 }
@@ -218,7 +212,7 @@ footer{
   width: 20%;
   position: absolute;
   right: 55%;
-  padding: 3rem;
+  padding: 5rem;
   height: 30rem;
   top: 4vh;
   color: #fff;
