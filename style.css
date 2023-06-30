@@ -239,6 +239,7 @@ footer{
   border-bottom-right-radius: 4rem;
   font-size: 4px;
   -ms-zoom-animation: unset;
+  clip-path: polygon(0 0, 33% 0, 21% 39%, 26% 66%, 0 100%, 0% 50%);
 }
 
 nav a p:first-child{
