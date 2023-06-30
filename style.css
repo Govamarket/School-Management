@@ -5,11 +5,16 @@
 }
 /* body* */
 body {
-  background-blend-mode: overlay;
-    background: #120123f0;
-  background-repeat: no-repeat;
-  background-position: fixed;
-  background-size: cover;
+ 
+    background-blend-mode: overlay;
+    background: #350568;
+    background-image: url(./img/soso.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-position: cover;
+  
+  
 }
 nav{
   display: flex;
@@ -209,17 +214,6 @@ footer{
     margin-left: 0%;
     gap: 1rem;
   }
-
-  body {
-  background-blend-mode: overlay;
-  /* background: #350568; */
-  background-image: url(./img/soso.jpg);
-  background-repeat: no-repeat;
-  background-position: fixed;
-  background-size: cover;
-  background-position: cover;
-}
-
 .nav-lists {
   width: 20%;
   position: absolute;
