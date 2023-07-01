@@ -115,6 +115,9 @@
     background-size: 30rem;
     position: relative;
   }
+  input:active{
+    background: #fff;
+  }
   input:hover {
     background: #ccc;
     color: black;
@@ -179,11 +182,11 @@
   }
   
   
-  div kbd {
+  footer kbd {
     display: flex;
     justify-content: center;
     margin: 2rem;
-    color: #fff;
+    color: black;
     font-size: 10px;
   }
   
@@ -197,6 +200,9 @@
       background-blend-mode: color-burn;
       margin: 1rem;
       position: relative;
+    }
+    input:active{
+      background: #fff;
     }
   
     .nav-lists {
@@ -261,6 +267,10 @@
     }
     .logo{
       margin-top: 3px;
+    }
+
+    footer kbd{
+      color: black;
     }
   }
   

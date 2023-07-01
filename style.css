@@ -159,7 +159,7 @@ button {
   border: none;
 }
 
-footer{
+footer kbd{
   display: flex;
   justify-content: center;
   margin: 1rem;
