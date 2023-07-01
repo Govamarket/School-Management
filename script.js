@@ -1,7 +1,7 @@
 // alert("hello world");
 
 // const allVarible = () => {
-    
+
 //     const navBar = document.querySelector(".navbar");
 //     const navList = document.querySelector(".nav-lists");
 //     const dropDown = documnet.querySelector(".dropdown");
@@ -13,8 +13,7 @@
 //     const passWord = document.querySelector('#psw');
 //     const password2 = document.querySelector('#psw2');
 //     const signUp = document.querySelector('#signup');
-//     const signIn = document.querySelector('#signin');   
-
+//     const signIn = document.querySelector('#signin');
 
 //     // working on the script funtion and implementations
 
@@ -28,28 +27,29 @@
 
 // allVarible();
 
-
 const navSlide = () => {
-    const burger = document.querySelector(".burger");
-    const nav = document.querySelector(".nav-lists");
-    const navLinks = document.querySelectorAll(".nav-lists li");
-    // the toggle navigation
-    burger.addEventListener("click", () => {
-      nav.classList.toggle("nav-active");
-      // Animate links
-      navLinks.forEach((link, index) => {
-        if (link.style.animation) {
-          link.style.animation = "";
-        } else {
-          link.style.animation = `navLinksFade 0.5s ease forwards ${
-            index / 7 + 1.5
-          }s`;
-        }
-      });
-      // Burger animation
-      burger.classList.toggle("toggle");
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector(".nav-lists");
+  const navLinks = document.querySelectorAll(".nav-lists li");
+  const container = document.querySelector(".container");
+  // the toggle navigation
+  burger.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
+    // Animate links
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = "";
+        container.style.opacity = "1";
+      } else {
+        container.style.opacity = "0";
+        link.style.animation = `navLinksFade 0.5s ease forwards ${
+          index / 7 + 1.5
+        }s`;
+      }
     });
-  };
+    // Burger animation
+    burger.classList.toggle("toggle");
+  });
+};
 
-  navSlide();
-  
+navSlide();

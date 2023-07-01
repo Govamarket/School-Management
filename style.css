@@ -6,12 +6,12 @@
 /* body* */
  body {
     background-blend-mode: overlay;
-    background: #350568;
     background-image: url(./img/soso.jpg);
     background-repeat: no-repeat;
     background-position: fixed;
     background-size: cover;
     background-position: cover; 
+    background-attachment: scroll;
 }
 nav{
   display: flex;
@@ -210,24 +210,25 @@ footer{
     gap: 1rem;
   }
 .nav-lists {
-  display: flex;
+  border-top-right-radius: 4rem;
+  border-bottom-right-radius: 4rem;
   position: absolute;
-  right: 55%;
+  right: 20%;
+  width: 100%;
   padding: 5rem;
-  height: 30rem;
+  height: 20rem;
   top: 4vh;
   color: #fff;
   padding-top: 1rem;
   margin: 2rem;
-  background-color: rgb(1, 8, 28);
+  background-color: #04366c;
   display: flex;
   flex-direction: column;
   align-items: center;
   transform: translateY(-210%);
   transition: transform 1s ease-in;
-  
-  font-size: 4px;
-  margin-right: 3rem;
+  margin-top: 4rem;
+
 }
 
 
