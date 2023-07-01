@@ -6,8 +6,13 @@
   /* body* */
   body {
     background-blend-mode: overlay;
-    background: #120123f0;
-  }
+    background-image: url(./img/soso.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-position: cover; 
+    background-attachment: scroll;
+}
   nav :-ms-keyboard-active{
     background: #fff;
   }
@@ -68,9 +73,9 @@
     color: #fff;
     padding-top: 1rem;
     font-weight: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 17px;
-    text-shadow: 3px 3px 3px purple;
+    text-shadow: 3px 3px 3px blue;
   }
 
   .dropdown-menu {
@@ -93,11 +98,13 @@
     font-family: monospace;
     font-size: 14px;
   }
+
+
   /* inputs login* */
   input {
     padding: 1rem;
     margin: 3px;
-    width: 30rem;
+    width: 27rem;
     background: #fff;
     color: black;
     font-size: 1rem;
@@ -123,6 +130,8 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     position: relative;
+    outline: none;
+    border: 0;
   }
   
   .container {
@@ -144,21 +153,31 @@
     width: 7rem;
     border-radius: 1rem;
     outline: none;
+    border: 0px;
   }
   
   #signup {
     outline: 0;
-    color: #350568;
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    background: #fff;
+    background: blue;
+    border: 0;
+  
+  }
+  
+  #signup a {
+    color: #fff;
+    text-decoration: none;
   }
   
   #signin {
     outline: 0;
-    color: #350568;
+    color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    background: #fff;
+    background: blue;
+    border: none;
   }
+  
   
   div kbd {
     display: flex;
@@ -221,7 +240,7 @@
     input {
       padding: 1rem;
       margin: 3px;
-      width: 15rem;
+      width: 17rem;
       background: #fff;
       color: black;
       font-size: 1rem;
@@ -231,6 +250,7 @@
       background-attachment: fixed;
       background-size: 30rem;
       position: absolute;
+      border-color: #fff;
     }
   
     .control {

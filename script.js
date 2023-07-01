@@ -1,32 +1,5 @@
-// alert("hello world");
 
-// const allVarible = () => {
-
-//     const navBar = document.querySelector(".navbar");
-//     const navList = document.querySelector(".nav-lists");
-//     const dropDown = documnet.querySelector(".dropdown");
-//     const dropDownMenu = document.querySelector(".dropdown-menu");
-//     const burgerIcon = document.querySelector(".burger");
-//     const nameInput = document.querySelector("#name");
-//     const emailInput = document.querySelector("#email");
-//     const studentId = document.querySelector("#student");
-//     const passWord = document.querySelector('#psw');
-//     const password2 = document.querySelector('#psw2');
-//     const signUp = document.querySelector('#signup');
-//     const signIn = document.querySelector('#signin');
-
-//     // working on the script funtion and implementations
-
-//     if (dropDownMenu.value == 0) {
-//         document.styleSheets.visibility = 'visible';
-//     }else{
-//         document.styleSheets.visibility = 'hidden';
-//     }
-
-// }
-
-// allVarible();
-
+// The following are the navigation manipulations
 const navSlide = () => {
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav-lists");
@@ -53,3 +26,13 @@ const navSlide = () => {
 };
 
 navSlide();
+
+// Working on the local storage to secure individual data structures
+
+const localStore = () => {
+
+}
+
+
+
+// Using mathRandom to generate student Id (number)  I don't know how efficient or effective it will be...
