@@ -82,7 +82,7 @@
     text-align: center;
     padding: 1rem;
     position: fixed;
-    /* visibility: hidden; */
+    visibility: hidden;
   }
   
   .dropdown-menu li {

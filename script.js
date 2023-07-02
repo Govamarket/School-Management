@@ -30,9 +30,16 @@ navSlide();
 // Working on the local storage to secure individual data structures
 
 const localStore = () => {
+  const checkResult = document.querySelector(".checkresult");
 
+  // Working on the boolean properties
+  if (checkResult == 0) {
+    window.location.href = "index.html";
+    style.display.background = "red";
+  }
 }
 
+localStore();
 
 
 // Using mathRandom to generate student Id (number)  I don't know how efficient or effective it will be...
