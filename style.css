@@ -143,21 +143,21 @@ button {
   outline: none;
 }
 
-#signup {
+button #signup {
   outline: 0;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   background: blue;
-  border: 0;
+  border: none;
 
 }
 
-#signup a {
+ button #signup a {
   color: #fff;
   text-decoration: none;
 }
 
-#signin {
+button #signin {
   outline: 0;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
