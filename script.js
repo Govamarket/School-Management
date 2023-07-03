@@ -34,8 +34,7 @@ const localStore = () => {
 
   // Working on the boolean properties
   if (checkResult == 0) {
-    window.location.href = "index.html";
-    style.display.background = "red";
+    
   }
 }
 
