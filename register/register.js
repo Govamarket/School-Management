@@ -25,6 +25,7 @@ const inputSurnaValid = () => {
       'background-color:blue;' +
   '}';
 };
+};
 // Ending
 
 inputSurnaValid();
