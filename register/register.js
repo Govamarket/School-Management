@@ -11,13 +11,19 @@ const inputFunction = document.querySelectorAll("input");
 const validRegex =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 const getId = document.querySelector(".gitid");
+var style = document.createElement("style");
 
 // Validating error messages javascript
 
 // Inputs main validation function to validate
 const inputSurnaValid = () => {
   if (surName.value === "") {
-  }
+    document.write("<p>fill the required field</p>");
+    styles.innerHTML = 
+    '.some-element {' +
+      'color: red;' +
+      'background-color:blue;' +
+  '}';
 };
 // Ending
 
