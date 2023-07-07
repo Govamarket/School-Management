@@ -10,10 +10,10 @@
 
 <body>
     <nav>
-            <div class="logo">
-                <img src="./img/soso.jpg" alt="">
-            </div>
-          
+        <div class="logo">
+            <img src="./img/soso.jpg" alt="">
+        </div>
+
 
 
     </nav>
@@ -24,25 +24,33 @@
 
     <div class="container">
 
-        <div><input type="text" id="surname" placeholder="Surname" >
-            <!-- <p class="sur-error">Enter surname</p> -->
+        <div><input type="text" id="surname" placeholder="Surname">
+            <p class="emptymsg">Enter surname</p>
+            <p class="sur-error">Invalid data</p>
         </div>
         <div><input type="text" id="middlename" placeholder="Middle/LastName">
-            <!-- <p class="mid-error">Enter middle/lastname</p> -->
+            <p class="mid-empty">Enter middle/lastname</p>
+            <p class="midleromsg">Invalid data</p>
         </div>
         <div><input type="text" id="email" placeholder="Email">
-            <!-- <p class="email-error">Enter email</p> -->
+            <p class="emptymail">Empty field</p>
+            <p class="email-error">Invalid data</p>
         </div><br>
         <div><input type="text" id="studentid" placeholder="Generate Id">
             <div class="getid"></div>
-            <!-- <p class="id-error">Generate your Id</p> -->
+            <p class="emptyinput">Generate Id from the blue button</p>
+            <p class="id-error">Generate your Id</p>
         </div>
         <br><br>
         <div><input type="password" id="pswd" placeholder="Password">
-            <!-- <p class="psw-error">Enter password</p> -->
+            <p class="emptypsw">Empty field</p>
+            <p class="pswLessThan">Password must exceed 5 character</p>
+            <p class="psw-error">Enter password</p>
         </div>
         <div><input type="password" id="pswd2" placeholder="Confirm Password">
-            <!-- <p class="pswd-error">Confirm password</p> -->
+            <p class="emptyconfirm">Empty field</p>
+            <p class="lessThan">Password must exceed 5 character'</p>
+            <p class="pswd-error">Confirm password</p>
         </div>
 
 
@@ -52,9 +60,9 @@
         <button type="button" id="signin">Sign in</button>
     </div>
 
-<footer>
-    <kbd>Alright reserve no copyright @Govacoder2023</kbd>
-</footer>
+    <footer>
+        <kbd>Alright reserve no copyright @Govacoder2023</kbd>
+    </footer>
 
 
     <script src="register.js"></script>

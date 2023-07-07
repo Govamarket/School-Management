@@ -13,48 +13,31 @@ const validRegex =
 const getId = document.querySelector(".gitid");
 var style = document.createElement("style");
 
-// Validating error messages javascript
+// Error messages using dom manipulation
+const surEmptyMsg = document.querySelector(".emptymsg");
+const surError = document.querySelector(".sur-error");
 
-// Inputs main validation function to validate
-const inputSurnaValid = () => {
-  if (surName.value === "") {
-    style.write("<p>fill the required field</p>");
-    styles.innerHTML = 
-    '.some-element {' +
-      'color: red;' +
-      'background-color:blue;' +
-  '}';
-};
-};
-// Ending
+// middle name error messages
+const emptymdMsg = document.querySelector(".mid-empty");
+const middleErrorMsg = document.querySelector(".midleromsg");
 
-inputSurnaValid();
+// Email error messages
+const emailEmpty = document.querySelector(".emptymail");
+const emailErro = document.querySelector(".email-error");
 
-const inputName = (name) => {
-  if (middleName.value === "") {
-    alert("please enter name");
-  }
-};
-inputName();
+// const student error messages
+const studentEmpty = document.querySelector(".emptyinput");
+const studentErrorMsg = document.querySelector(".id-error");
 
-// ending
+// password error messages
+const pasEmpty = document.querySelector(".emptypsw");
+const pasError = document.querySelector(".psw-error");
+const pasLessThan = document.querySelector(".pswLessThan");
 
-const emailValid = () => {
-  if (emailInput.value === "" || !emailInput.value === validRegex.value) {
-    alert("Please enter");
-  }
-};
-
-emailValid();
-
-// End validation
-
-getId.addEventListener =
-  ("click",
-  (event) => {
-    // Math.random(10);
-    alert = Math.random(10);
-  });
+// Confirm password error messages
+const confirmEmpty = document.querySelector(".emptyconfirm");
+const confirmError = document.querySelector(".pswd-error");
+const confirmLess = document.querySelector(".lessThan");
 
 //Targeting error messages via to appear in (Using this method for now)
 
@@ -71,22 +54,52 @@ middleName.addEventListener("change", (event) => {
   }, 2000);
 });
 
-emailInput.addEventListener("change", (event) => {
-  setTimeout(() => {}, 2000);
-});
+
+
+
+// Validating error messages javascript
+
+// Inputs main validation function to validate
+const inputSurnaValid = () => {
+  if (surName.value == "") {
+    surEmptyMsg.style.visibility = "visible";
+    surError.style.visibility = "hidden";
+  }else{
+    surEmptyMsg.style.visibility = "hidden";
+    surError.style.visibility = "visible";
+  }
+};
+
+inputSurnaValid();
+
+
+
+const inputMiddleName = (name) => {
+  if (middleName.value == "") {
+    emptymdMsg.style.visibility = "visible";
+  }
+};
+inputName();
+
+
+
 
 signUp.addEventListener("click", (event) => {
-  if (surName.value === "") {
-    alert("please enter your surname");
+  if (
+    surName.value == "" ||
+    middleName.value == "" ||
+    emailInput.value == "" ||
+    generatId.value == "" ||
+    password.value == "" ||
+    passwordConfirmation.value == "" ||
+    signUp.value == "" ||
+    singIn.value == "" ||
+    inputFunction.value == "" ||
+    validRegex.value == ""
+  ) {
+    inputSurnaValid();
   }
 });
 
-
 // Validation of all fields
-const allFields = () => {
-if (condition) {
-  
-}
-};
 
-allFields();
