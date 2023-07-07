@@ -18,7 +18,7 @@ var style = document.createElement("style");
 // Inputs main validation function to validate
 const inputSurnaValid = () => {
   if (surName.value === "") {
-    document.write("<p>fill the required field</p>");
+    style.write("<p>fill the required field</p>");
     styles.innerHTML = 
     '.some-element {' +
       'color: red;' +
@@ -80,3 +80,13 @@ signUp.addEventListener("click", (event) => {
     alert("please enter your surname");
   }
 });
+
+
+// Validation of all fields
+const allFields = () => {
+if (condition) {
+  
+}
+};
+
+allFields();
