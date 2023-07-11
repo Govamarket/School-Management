@@ -6,7 +6,7 @@
 /* body* */
 body {
   background-blend-mode: darken;
-  background-image: url(./img/soso.jpg);
+  background-image: url(../img/soso.jpg);
   background-repeat: repeat;
   background-position: fixed;
   background-size: cover;

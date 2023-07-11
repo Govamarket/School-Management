@@ -1,68 +1,50 @@
-// // using javascript to create html text nodes will be highlighted soon after
-// const surName = document.querySelector("#surname");
-// const middleName = document.querySelector("#middlename");
-// const emailInput = document.querySelector("email");
-// const generatId = document.querySelector("#studentid");
-// const password = document.querySelector("#pswd");
-// const passwordConfirmation = document.querySelector("#pswd2");
-// const signUp = document.querySelector("#signup");
-// const singIn = document.querySelector("#signin");
-// const inputFunction = document.querySelectorAll("input");
-// const validRegex =
-//   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+// using javascript to create html text nodes will be highlighted soon after
+const surName = document.querySelector("#surname");
+const middleName = document.querySelector("#middlename");
+const emailInput = document.querySelector("#email");
+const generatId = document.querySelector("#studentid");
+const password = document.querySelector("#pswd");
+const passwordConfirmation = document.querySelector("#pswd2");
+const registerButton = document.querySelector("#signup");
+const singIn = document.querySelector("#signin");
+// const inputFunction = document.querySelector("input");
+const validRegex =
+  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 // const getId = document.querySelector(".gitid");
 // var style = document.createElement("style");
 
-// // Error messages using dom manipulation
-// const surEmptyMsg = document.querySelector(".emptymsg");
-// const surError = document.querySelector(".sur-error");
+//Targeting error messages via to appear in (Using this method for now)
+const targetSur = document.querySelector(".emptysurname");
+const targetMidName = document.querySelector(".mid-empty");
+const targetMail = document.querySelector(".emptymail");
+const targetNotMatch = document.querySelector(".notMatch");
+const targetiD = document.querySelector(".getid");
+const targetidError = document.querySelector(".id-error");
+const targetPsw = document.querySelector(".emptypsw");
+const targetLessPsw = document.querySelector(".pswLessThan");
+// const targetPswF = document.querySelector(".psw-error"); 
+const targetPswConfirm = document.querySelector(".emptyconfirm");
+const targetPswdLess = document.querySelector(".lessThan");
+const targetPswError = document.querySelector(".pswd-error");
 
-// // middle name error messages
-// const emptymdMsg = document.querySelector(".mid-empty");
-// const middleErrorMsg = document.querySelector(".midleromsg");
-
-// // Email error messages
-// const emailEmpty = document.querySelector(".emptymail");
-// const emailErro = document.querySelector(".email-error");
-
-// // const student error messages
-// const studentEmpty = document.querySelector(".emptyinput");
-// const studentErrorMsg = document.querySelector(".id-error");
-
-// // password error messages
-// const pasEmpty = document.querySelector(".emptypsw");
-// const pasError = document.querySelector(".psw-error");
-// const pasLessThan = document.querySelector(".pswLessThan");
-
-// // Confirm password error messages
-// const confirmEmpty = document.querySelector(".emptyconfirm");
-// const confirmError = document.querySelector(".pswd-error");
-// const confirmLess = document.querySelector(".lessThan");
-
-// export {
-//   surName,
-//   middleName,
-//   emailInput,
-//   generatId,
-//   password,
-//   passwordConfirmation,
-//   signUp,
-//   singIn,
-//   inputFunction,
-//   validRegex,
-//   getId,
-//   surError,
-//   surEmptyMsg,
-//   emptymdMsg,
-//   middleErrorMsg,
-//   emailEmpty,
-//   emailErro,
-//   studentEmpty,
-//   studentErrorMsg,
-//   pasEmpty,
-//   pasError,
-//   pasLessThan,
-//   confirmEmpty,
-//   confirmError,
-//   confirmLess,
-// }
+export {
+  surName,
+  middleName,
+  emailInput,
+  generatId,
+  password,
+  passwordConfirmation,
+  registerButton,
+  singIn,
+  validRegex,
+  targetSur,
+  targetMidName,
+  targetNotMatch,
+  targetiD,
+  targetidError,
+  targetPsw,
+  targetLessPsw,
+  targetPswConfirm,
+  targetPswdLess,
+  targetPswError,
+}

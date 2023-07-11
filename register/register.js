@@ -1,37 +1,30 @@
-// using javascript to create html text nodes will be highlighted soon after
-const surName = document.querySelector("#surname");
-const middleName = document.querySelector("#middlename");
-const emailInput = document.querySelector("#email");
-const generatId = document.querySelector("#studentid");
-const password = document.querySelector("#pswd");
-const passwordConfirmation = document.querySelector("#pswd2");
-const registerButton = document.querySelector("#signup");
-const singIn = document.querySelector("#signin");
-const inputFunction = document.querySelector("input");
-const validRegex =
-  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-const getId = document.querySelector(".gitid");
-var style = document.createElement("style");
-
-//Targeting error messages via to appear in (Using this method for now)
-const targetSur = document.querySelector(".emptysurname");
-const targetMidName = document.querySelector(".mid-empty");
-const targetMail = document.querySelector(".emptymail");
-const targetNotMatch = document.querySelector(".notMatch");
-const targetiD = document.querySelector(".getid");
-const targetidError = document.querySelector(".id-error");
-const targetPsw = document.querySelector(".emptypsw");
-const targetLessPsw = document.querySelector(".pswLessThan");
-const targetPswF = document.querySelector(".psw-error");
-const targetPswConfirm = document.querySelector(".emptyconfirm");
-const targetPswdLess = document.querySelector(".lessThan");
-const targetPswError = document.querySelector(".pswd-error");
+import{ 
+  surName,
+  middleName,
+  emailInput,
+  generatId,
+  password,
+  passwordConfirmation,
+  registerButton,
+  singIn,
+  validRegex,
+  targetSur,
+  targetMidName,
+  targetNotMatch,
+  targetiD,
+  targetidError,
+  targetPsw,
+  targetLessPsw,
+  targetPswConfirm,
+  targetPswdLess,
+  targetPswError,
+ } from "./variables";
 
 // Generalizing the inputs validation using setout time funtionality with add.eventlistner
 surName.addEventListener("change", (event) => {
   setTimeout(() => {
     inputSurnaValid();
-  }, 3000);
+  }, 30000);
 });
 
 middleName.addEventListener("change", (event) => {
@@ -63,9 +56,9 @@ passwordConfirmation.addEventListener("change", (event) => {
 // Inputs main validation function to validate
 const inputSurnaValid = () => {
   if (surName.value == "") {
+    // targetSur.innerHTML = "Fill the input field";  
     surName.style.backgroundColor = "#FFFFFF";
     surName.style.color = "black";
-    targetSur.innerHTML = "Fill the input field";
     targetSur.style.paddingTop = "3px";
     targetSur.style.color = "tomato";
     targetSur.style.fontSize = "12px";
@@ -85,7 +78,7 @@ const inputMiddleName = () => {
   if (middleName.value == "") {
     middleName.style.background = "#FFFFFF";
     middleName.style.color = "black";
-    targetMidName.innerHTML = "Fill the input field";
+    // targetMidName.innerHTML = "Fill the input field";
     targetMidName.style.paddingTop = "3px";
     targetMidName.style.fontWeight = "arial";
     targetMidName.style.color = "tomato";
@@ -115,7 +108,7 @@ const emailValidator = () => {
   } else if (!emailInput.value.match(validRegex)) {
     emailInput.style.background = "red";
     emailInput.style.color = "#FFFF";
-    targetNotMatch.innerHTML = "Please enter a valid email address";
+    // targetNotMatch.innerHTML = "Please enter a valid email address";
     targetMail.style.visibility = "hidden";
     targetNotMatch.style.color = "tomato";
     targetNotMatch.style.textAlign = "center";
@@ -135,7 +128,7 @@ const paswordValid = () => {
   if (password.value == "") {
     password.style.background = "#FFFF";
     password.style.color = "black";
-    targetPsw.innerHTML = "Please enter your password";
+    // targetPsw.innerHTML = "Please enter your password";
     targetPsw.style.color = "red";
     targetPsw.style.textAlign = "center";
     targetPsw.style.fontSize = "12px";
@@ -143,7 +136,7 @@ const paswordValid = () => {
     targetPsw.style.paddingTop = "3px";
   } else if (password.value.length < 6 || password.value.length > 10) {
     targetPsw.style.visibility = "hidden";
-    targetLessPsw.innerHTML = "Must be at least 6 characters";
+    // targetLessPsw.innerHTML = "Must be at least 6 characters";
     password.style.background = "red";
     password.style.color = "white";
     targetLessPsw.style.fontSize = "12px";
@@ -160,7 +153,7 @@ paswordValid();
 
 const pasconfirmValid = () => {
   if (passwordConfirmation.value == "") {
-    targetPswConfirm.innerHTML = "Confirm Password";
+    // targetPswConfirm.innerHTML = "Confirm Password";
     targetPswConfirm.style.fontSize = "12px";
     targetPswConfirm.style.color = "tomato";
     targetPswConfirm.style.textAlign = "center";
@@ -172,7 +165,7 @@ const pasconfirmValid = () => {
     !passwordConfirmation.value.match(password.value) ||
     !password.value.match(passwordConfirmation.value)
   ) {
-    targetPswError.innerHTML = "Password does not match";
+    // targetPswError.innerHTML = "Password does not match";
     targetPswError.style.color = "red";
     targetPswError.style.fontSize = "12px";
     targetPswError.style.fontFamily = "arial";
@@ -194,7 +187,7 @@ pasconfirmValid();
 
 const generatStudentId = () => {
   if (generatId.value == "") {
-    targetiD.innerHTML = "Click the red button to generate id";
+    // targetiD.innerHTML = "Click the red button to generate id";
     generatId.style.background = "white";
     targetiD.style.fontSize = "12px";
     targetiD.style.color = "tomatoes";
