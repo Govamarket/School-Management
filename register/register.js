@@ -182,7 +182,7 @@ const pasconfirmValid = () => {
     targetPswConfirm.style.visibility = "hidden";
     passwordConfirmation.style.background = "red";
     passwordConfirmation.style.color = "#FFF";
-  }else{
+  } else {
     targetPswError.style.visibility = "hidden";
     targetPswConfirm.style.visibility = "hidden";
     passwordConfirmation.style.background = "green";
@@ -192,12 +192,35 @@ const pasconfirmValid = () => {
 
 pasconfirmValid();
 
+const generatStudentId = () => {
+  if (generatId.value == "") {
+    targetiD.innerHTML = "Click the red button to generate id";
+    generatId.style.background = "white";
+    targetiD.style.fontSize = "12px";
+    targetiD.style.color = "tomatoes";
+    targetiD.style.paddingTop = "3px";
+    targetLessPsw.style.fontFamily = "arial";
+  }
+}
+
 registerButton.addEventListener("click", (event) => {
-  alert("Please enter");
-  inputSurnaValid();
-  inputMiddleName();
-  paswordValid();
-  pasconfirmValid();
+  if (
+    surName.value == "" ||
+    middleName.value == "" ||
+    emailInput.value == "" ||
+    passwordConfirmation.value == "" ||
+    generatId.value == "" ||
+    password.value == "" ||
+    passwordConfirmation.value == ""
+  ) {
+    inputSurnaValid();
+    inputMiddleName();
+    emailValidator();
+    paswordValid();
+    pasconfirmValid();
+  }
+
+  alert("verify details");
 });
 
 // Validation of all fields
