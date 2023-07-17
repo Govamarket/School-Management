@@ -72,6 +72,7 @@ const inputSurnaValid = () => {
     targetSur.style.fontSize = "12px";
     targetSur.style.textAlign = "center";
     targetSur.style.fontWeight = "arial";
+    return false;
   } else {
     surName.style.background = "green";
     surName.style.color = "#fff";
@@ -93,6 +94,7 @@ const inputMiddleName = () => {
     targetSur.style.fontWeight = "arial";
     targetMidName.style.fontSize = "12px";
     targetMidName.style.textAlign = "center";
+    return false;
   } else {
     middleName.style.background = "green";
     middleName.style.color = "#FFFFFF";
@@ -113,6 +115,7 @@ const emailValidator = () => {
     targetMail.style.fontSize = "12px";
     targetMail.style.textAlign = "center";
     targetSur.style.fontWeight = "arial";
+    return false;
   } else if (!emailInput.value.match(validRegex)) {
     emailInput.style.background = "red";
     emailInput.style.color = "#FFFF";
@@ -122,6 +125,7 @@ const emailValidator = () => {
     targetNotMatch.style.textAlign = "center";
     targetNotMatch.style.fontWeight = "arial";
     targetNotMatch.style.fontSize = "12px";
+    return false;
   } else {
     emailInput.style.background = "green";
     emailInput.style.color = "white";
@@ -142,6 +146,7 @@ const paswordValid = () => {
     targetPsw.style.fontSize = "12px";
     targetPsw.style.fontWeight = "arial";
     targetPsw.style.paddingTop = "3px";
+    return false;
   } else if (password.value.length < 6 || password.value.length > 10) {
     targetPsw.style.visibility = "hidden";
     // targetLessPsw.innerHTML = "Must be at least 6 characters";
@@ -150,6 +155,7 @@ const paswordValid = () => {
     targetLessPsw.style.fontSize = "12px";
     targetLessPsw.style.textAlign = "center";
     targetLessPsw.style.color = "tomato";
+    return false;
   } else {
     targetPsw.style.visibility = "hidden";
     targetLessPsw.style.visibility = "hidden";
@@ -169,6 +175,7 @@ const pasconfirmValid = () => {
     targetPswConfirm.style.paddingTop = "3px";
     passwordConfirmation.style.background = "#fff";
     passwordConfirmation.style.color = "black";
+    return false;
   } else if (
     !passwordConfirmation.value.match(password.value) ||
     !password.value.match(passwordConfirmation.value)
@@ -183,6 +190,7 @@ const pasconfirmValid = () => {
     targetPswConfirm.style.visibility = "hidden";
     passwordConfirmation.style.background = "red";
     passwordConfirmation.style.color = "#FFF";
+    return false;
   } else {
     targetPswError.style.visibility = "hidden";
     targetPswConfirm.style.visibility = "hidden";
