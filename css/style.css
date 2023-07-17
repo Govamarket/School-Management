@@ -102,6 +102,7 @@ div input {
     background: #fff;
     color: black;
     font-size: 10px;
+    line-height: 1px;
 }
 
 .container {
@@ -111,6 +112,7 @@ div input {
   background-blend-mode: color-burn;
   margin: 3rem;
   position: relative;
+  line-height: 1px;
 }
 
 .dropdown-menu {

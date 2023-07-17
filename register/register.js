@@ -22,41 +22,40 @@ const targetiD = document.querySelector(".getid");
 const targetidError = document.querySelector(".id-error");
 const targetPsw = document.querySelector(".emptypsw");
 const targetLessPsw = document.querySelector(".pswLessThan");
-// const targetPswF = document.querySelector(".psw-error"); 
+// const targetPswF = document.querySelector(".psw-error");
 const targetPswConfirm = document.querySelector(".emptyconfirm");
 const targetPswdLess = document.querySelector(".lessThan");
 const targetPswError = document.querySelector(".pswd-error");
-
 
 // Generalizing the inputs validation using setout time funtionality with add.eventlistner
 surName.addEventListener("change", (event) => {
   setTimeout(() => {
     inputSurnaValid();
-  }, 30000);
+  }, 2000);
 });
 
 middleName.addEventListener("change", (event) => {
   setTimeout(() => {
     inputMiddleName();
-  }, 3000);
+  }, 2000);
 });
 
 emailInput.addEventListener("change", (event) => {
   setTimeout(() => {
     emailValidator();
-  }, 300);
+  }, 2000);
 });
 
 password.addEventListener("change", (event) => {
   setTimeout(() => {
     paswordValid();
-  }, 3000);
+  }, 2000);
 });
 
 passwordConfirmation.addEventListener("change", (event) => {
   setTimeout(() => {
     pasconfirmValid();
-  }, 3000);
+  }, 2000);
 });
 
 // Validating error messages javascript
@@ -64,10 +63,10 @@ passwordConfirmation.addEventListener("change", (event) => {
 // Inputs main validation function to validate
 const inputSurnaValid = () => {
   if (surName.value == "") {
-    // targetSur.innerHTML = "Fill the input field";  
+    // targetSur.innerHTML = "Fill the input field";
     surName.style.backgroundColor = "#FFFFFF";
     surName.style.color = "black";
-    targetSur.style.paddingTop = "3px";
+    // targetSur.style.paddingTop = "3px";
     targetSur.style.color = "tomato";
     targetSur.style.fontSize = "12px";
     targetSur.style.textAlign = "center";
@@ -88,7 +87,7 @@ const inputMiddleName = () => {
     middleName.style.background = "#FFFFFF";
     middleName.style.color = "black";
     // targetMidName.innerHTML = "Fill the input field";
-    targetMidName.style.paddingTop = "3px";
+    // targetMidName.style.paddingTop = "3px";
     targetMidName.style.fontWeight = "arial";
     targetMidName.style.color = "tomato";
     targetSur.style.fontWeight = "arial";
@@ -108,9 +107,9 @@ const emailValidator = () => {
   if (emailInput.value == "") {
     emailInput.style.background = "#FFFF";
     emailInput.style.color = "black";
-    targetMail.innerHTML = "Add valid email";
+    // targetMail.innerHTML = "Add valid email";
     targetMail.style.fontWeight = "arial";
-    targetMail.style.paddingTop = "3px";
+    // targetMail.style.paddingTop = "3px";
     targetMail.style.color = "tomato";
     targetMail.style.fontSize = "12px";
     targetMail.style.textAlign = "center";
@@ -145,7 +144,7 @@ const paswordValid = () => {
     targetPsw.style.textAlign = "center";
     targetPsw.style.fontSize = "12px";
     targetPsw.style.fontWeight = "arial";
-    targetPsw.style.paddingTop = "3px";
+    // targetPsw.style.paddingTop = "3px";
     return false;
   } else if (password.value.length < 6 || password.value.length > 10) {
     targetPsw.style.visibility = "hidden";
@@ -171,8 +170,8 @@ const pasconfirmValid = () => {
     targetPswConfirm.style.fontSize = "12px";
     targetPswConfirm.style.color = "tomato";
     targetPswConfirm.style.textAlign = "center";
-    targetPswConfirm.style.marginBottom = "7px";
-    targetPswConfirm.style.paddingTop = "3px";
+    // targetPswConfirm.style.marginBottom = "7px";
+    // targetPswConfirm.style.paddingTop = "3px";
     passwordConfirmation.style.background = "#fff";
     passwordConfirmation.style.color = "black";
     return false;
@@ -185,7 +184,7 @@ const pasconfirmValid = () => {
     targetPswError.style.fontSize = "12px";
     targetPswError.style.fontFamily = "arial";
     targetPswError.style.textAlign = "center";
-    targetPswError.style.paddingTop = "3px";
+    // targetPswError.style.paddingTop = "3px";
     targetPswError.style.marginBottom = "1vh";
     targetPswConfirm.style.visibility = "hidden";
     passwordConfirmation.style.background = "red";
@@ -207,10 +206,10 @@ const generatStudentId = () => {
     generatId.style.background = "white";
     targetiD.style.fontSize = "12px";
     targetiD.style.color = "tomatoes";
-    targetiD.style.paddingTop = "3px";
+    // targetiD.style.paddingTop = "3px";
     targetLessPsw.style.fontFamily = "arial";
   }
-}
+};
 
 registerButton.addEventListener("click", (event) => {
   if (
@@ -221,15 +220,27 @@ registerButton.addEventListener("click", (event) => {
     generatId.value == "" ||
     password.value == "" ||
     passwordConfirmation.value == ""
-  ) {
+  )
     inputSurnaValid();
-    inputMiddleName();
-    emailValidator();
-    paswordValid();
-    pasconfirmValid();
+  inputMiddleName();
+  emailValidator();
+  paswordValid();
+  pasconfirmValid();
+  {
+    alert("field the empty input");
+    surName.style.background = "red";
+    surName.style.color = "#ccc";
+    middleName.style.background = "red";
+    middleName.style.color = "#ccc";
+    emailInput.style.background = "red";
+    emailInput.style.color = "#ccc";
+    generatId.style.background = "red";
+    generatId.style.color = "#ccc";
+    password.style.background = "red";
+    password.style.color = "#ccc";
+    passwordConfirmation.style.background = "red";
+    passwordConfirmation.style.color = "#ccc";
   }
-
-  alert("verify details");
 });
 
 // Validation of all fields
