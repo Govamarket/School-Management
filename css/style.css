@@ -206,6 +206,16 @@ footer kbd{
     justify-content: space-between;
   }
 
+  body {
+    background-blend-mode: overlay;
+    background-image: url(./img/soso.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    background-position: cover; 
+    background-attachment: scroll;
+}
+
   input {
     padding: 1rem;
     margin: 3px;
@@ -215,7 +225,7 @@ footer kbd{
     font-size: 1rem;
     outline: none;
     text-align: center;
-    background-image: url(./img/soso.jpg);
+    background-image: url(/img/soso.jpg);
     background-attachment: fixed;
     background-size: 30rem;
     position: absolute;

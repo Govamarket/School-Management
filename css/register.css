@@ -182,7 +182,7 @@ footer kbd {
     font-size: 1rem;
     outline: none;
     text-align: center;
-    background-image: url(./img/soso.jpg);
+    background-image: url(../img/soso.jpg);
     background-attachment: fixed;
     background-size: cover;
     position: absolute;
@@ -194,10 +194,11 @@ footer kbd {
     justify-content: center;
     margin-left: 0%;
     gap: 1rem;
+    padding-top: 4px;
   }
 
   footer kbd {
-    color: #161414;
+    color: #fff;
   }
 
   div input {
@@ -207,7 +208,7 @@ footer kbd {
     border-bottom-right-radius: 5px;
     position: relative;
     border: 0;
-    padding: 8px;
+    padding: 12px;
     outline: none;
     background: #fff;
     box-shadow: 2px 2px 2px rgb(2, 2, 2);
@@ -227,7 +228,7 @@ footer kbd {
 
   body {
     background-blend-mode: darken;
-    background-image: url(./img/soso.jpg);
+    background-image: url(../img/soso.jpg);
     background-repeat: repeat;
     background-position: center;
     background-size: fixed;
