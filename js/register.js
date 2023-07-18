@@ -19,7 +19,9 @@ surName.addEventListener("change", (event) => {
   }, 2000);
 });
 
-generatId.addEventListener("click", (event) => {});
+generatId.addEventListener("change", (event) => {
+  generatStudentId();
+});
 
 middleName.addEventListener("change", (event) => {
   setTimeout(() => {
@@ -154,6 +156,7 @@ registerButton.addEventListener("click", (event) => {
   emailValidator();
   paswordValid();
   pasconfirmValid();
+  generatId();
   {
     alert("field the empty input");
     surName.style.background = "red";
