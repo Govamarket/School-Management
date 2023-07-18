@@ -129,6 +129,9 @@ const generatStudentId = () => {
   if (generatId.value == "") {
     generatId.style.background = "white";
     generatId.style.color = "black";
+    return false;
+  }else {
+    return true;
   }
 };
 
