@@ -125,6 +125,11 @@ const pasconfirmValid = () => {
 
 pasconfirmValid();
 
+generatId.addEventListener("click", (event) =>{
+  return Math.floor(Math.random() * (max - min+1));
+  generatId.innerHTML = generatStudentId(1,10);
+});
+
 const generatStudentId = () => {
   if (generatId.value == "") {
     generatId.style.background = "white";
