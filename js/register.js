@@ -19,7 +19,7 @@ surName.addEventListener("change", (event) => {
   }, 2000);
 });
 
-generatId.addEventListener("change", (event) => {
+generatId.addEventListener("onclick", (event) => {
   generatStudentId();
 });
 
@@ -136,8 +136,7 @@ const generatStudentId = (min, max) => {
     return false;
   }else{
     return Math.floor(Math.random() * (max - min + 1)) + min;
-    generatId.innerHTML = (1, 10);
-    return true;
+    generatId.innerHTML = (1,10);
   }
 };
 
@@ -156,7 +155,7 @@ registerButton.addEventListener("click", (event) => {
   emailValidator();
   paswordValid();
   pasconfirmValid();
-  generatId();
+  generatStudentId();
   {
     alert("field the empty input");
     surName.style.background = "red";
