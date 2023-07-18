@@ -19,6 +19,8 @@ surName.addEventListener("change", (event) => {
   }, 2000);
 });
 
+generatId.addEventListener("click", (event) => {});
+
 middleName.addEventListener("change", (event) => {
   setTimeout(() => {
     inputMiddleName();
@@ -125,11 +127,15 @@ const pasconfirmValid = () => {
 
 pasconfirmValid();
 
-const generatStudentId = () => {
+const generatStudentId = (min, max) => {
   if (generatId.value == "") {
     generatId.style.background = "white";
     generatId.style.color = "black";
     return false;
+  }else{
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+    generatId.innerHTML = (1, 10);
+    return true;
   }
 };
 
