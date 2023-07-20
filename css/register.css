@@ -93,8 +93,6 @@ div input {
   background: #fff;
 }
 
-
-
 #studentid{
   background: #fff;
 }
@@ -179,7 +177,7 @@ footer kbd {
   .logo img {
     width: 10%;
     margin-left: 4px;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   input {
