@@ -10,7 +10,7 @@ const singIn = document.querySelector("#signin");
 // const inputFunction = document.querySelector("input");
 const validRegex =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-// const getId = document.querySelector(".gitid");
+const getId = document.querySelector(".gitid");
 
 // Generalizing the inputs validation using setout time funtionality with add.eventlistner
 surName.addEventListener("change", (event) => {
@@ -135,9 +135,9 @@ const generatStudentId = () => {
     generatId.style.color = "black";
     return false;
   } else {
-    var adUp = "nameAll";
-    adUp.concat(emailInput.value + middleName.value);
-    adUp.innerHTML = "";
+    getId.concat(emailInput.value + middleName.value);
+    getId.innerHTML = "";
+    getId.style.color = "black";  
   }
 };
 
