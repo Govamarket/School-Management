@@ -129,14 +129,15 @@ const pasconfirmValid = () => {
 
 pasconfirmValid();
 
-const generatStudentId = (min, max) => {
+const generatStudentId = () => {
   if (generatId.value == "") {
     generatId.style.background = "white";
     generatId.style.color = "black";
     return false;
-  }else{
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-    generatId.innerHTML = (1,10);
+  } else {
+    var adUp = "nameAll";
+    adUp.concat(emailInput.value + middleName.value);
+    adUp.innerHTML = "";
   }
 };
 
