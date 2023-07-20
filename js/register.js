@@ -19,7 +19,7 @@ surName.addEventListener("change", (event) => {
   }, 2000);
 });
 
-generatId.addEventListener("click", (event) => {
+generatId.addEventListener("change", (event) => {
   generatStudentId();
 });
 
