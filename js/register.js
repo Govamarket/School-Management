@@ -135,9 +135,10 @@ const generatStudentId = () => {
     generatId.style.color = "black";
     return false;
   } else {
-    generatId.concat(emailInput.value + middleName.value);
+    generatId.concat(emailInput.value);
     generatId.innerHTML = "";
     generatId.style.color = "black";  
+    r
   }
 };
 
