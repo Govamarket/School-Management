@@ -152,6 +152,22 @@ button {
   border: none;
 }
 
+#get{
+  background: blue;
+  color: #fff;
+  width: 2px;
+  height: 2px;
+  text-align: center;
+  text-align: center;
+  border-bottom-right-radius: 2rem;
+  position: absolute;
+  right: 8%;
+  position: relative;
+}
+
+.forth span{
+  position: relative;
+}
 
 footer kbd {
   display: flex;
@@ -254,5 +270,15 @@ footer kbd {
     margin-left: 80%;
   }
 
+
+  #get{
+  background: blue;
+  color: #fff;
+  width: 3%;
+  height: 4px;
+  position: absolute;
+  right: 7%;
+  margin-top: 13px;
+}
 
 }
