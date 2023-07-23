@@ -41,7 +41,7 @@ password.addEventListener("change", (event) => {
   }, 2000);
 });
 
-passwordConfirmation.addEventListener("change", (event) => {
+passwordConfirmation.addEventListener("onchange", (event) => {
   setTimeout(() => {
     pasconfirmValid();
   }, 2000);
