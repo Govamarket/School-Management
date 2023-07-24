@@ -4,13 +4,12 @@ const middleName = document.querySelector("#middlename");
 const emailInput = document.querySelector("#email");
 const generatId = document.querySelector("#studentid");
 const password = document.querySelector("#pswd");
-const passwordConfirmation = document.querySelector("#pswd2");
+const levelValid = document.querySelector("#level");
 const registerButton = document.querySelector("#signup");
 const singIn = document.querySelector("#signin");
 const getMainId = document.querySelector("#get");
 const validRegex =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-const getId = document.querySelector(".gitid");
 
 // Generalizing the inputs validation using setout time funtionality with add.eventlistner
 surName.addEventListener("change", (event) => {
@@ -35,16 +34,27 @@ emailInput.addEventListener("change", (event) => {
   }, 2000);
 });
 
+levelValid.addEventListener("change", (event) => {
+  setTimeout(() => {
+    LevelValidation();
+  }, 2000);
+});
 password.addEventListener("change", (event) => {
   setTimeout(() => {
     paswordValid();
   }, 2000);
 });
 
-passwordConfirmation.addEventListener("onchange", (event) => {
-  setTimeout(() => {
-    pasconfirmValid();
-  }, 2000);
+
+
+getMainId.addEventListener("click", (event) => {
+  if (getMainId.value == "") {
+    alert("Please enter");
+    getMainId.concat(emailValidator);
+    getMainId.innerHTML = "";
+    getMainId.style.color = "red";
+    
+  }
 });
 
 // Validating error messages javascript
@@ -109,25 +119,18 @@ const paswordValid = () => {
 };
 paswordValid();
 
-const pasconfirmValid = () => {
-  if (passwordConfirmation.value == "") {
-    passwordConfirmation.style.background = "#fff";
-    passwordConfirmation.style.color = "black";
-    return false;
-  } else if (
-    !passwordConfirmation.value.match(password.value) ||
-    !password.value.match(passwordConfirmation.value)
-  ) {
-    passwordConfirmation.style.background = "red";
-    passwordConfirmation.style.color = "#FFF";
+const LevelValidation = () => {
+  if (levelValid.value == "") {
+    levelValid.style.background = "#fff";
+    levelValid.style.color = "black";
     return false;
   } else {
-    passwordConfirmation.style.background = "green";
-    passwordConfirmation.style.color = "#fff";
+    levelValid.style.background = "green";
+    levelValid.style.color = "#fff";
   }
 };
 
-pasconfirmValid();
+LevelValidation();
 
 const generatStudentId = () => {
   if (generatId.value == "") {
@@ -156,7 +159,7 @@ registerButton.addEventListener("click", (event) => {
   inputMiddleName();
   emailValidator();
   paswordValid();
-  pasconfirmValid();
+  LevelValidation();
   generatStudentId();
   {
     alert("field the empty input");
@@ -170,8 +173,8 @@ registerButton.addEventListener("click", (event) => {
     generatId.style.color = "#ccc";
     password.style.background = "red";
     password.style.color = "#ccc";
-    passwordConfirmation.style.background = "red";
-    passwordConfirmation.style.color = "#ccc";
+    levelValid.style.background = "red";
+    levelValid.style.color = "#ccc";
   }
 });
 
