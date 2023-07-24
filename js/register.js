@@ -49,11 +49,7 @@ password.addEventListener("change", (event) => {
 
 getMainId.addEventListener("click", (event) => {
   if (getMainId.value == "") {
-    alert("Please enter");
-    getMainId.concat(emailValidator);
-    getMainId.innerHTML = "";
-    getMainId.style.color = "red";
-    
+ alert("kindly generate student Id");
   }
 });
 
