@@ -61,6 +61,8 @@ function generateNumber() {
 
       generatId.value = result;
       generatId.style.background = "green";
+      buttonId.style.background = "green";
+      return false;
 }
 
 generateNumber();
