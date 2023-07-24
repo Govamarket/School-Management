@@ -9,12 +9,16 @@ const registerButton = document.querySelector("#signup");
 const singIn = document.querySelector("#signin");
 const validRegex =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
+const buttonId = document.querySelector("#clickUp");
 // Generalizing the inputs validation using setout time funtionality with add.eventlistner
 surName.addEventListener("change", (event) => {
   setTimeout(() => {
     inputSurnaValid();
   }, 2000);
+});
+
+buttonId.addEventListener("click", (event) => {
+  generateNumber();
 });
 
 generatId.addEventListener("onclick", (event) => {
@@ -47,7 +51,7 @@ password.addEventListener("change", (event) => {
 function generateNumber() {
       // Define the characters that can be used in the random string
       const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-      let result = '';
+      let result = "";
       const length = 10; // Adjust the length of the random string as per your requirement
 
       for (let i = 0; i < length; i++) {
@@ -56,6 +60,7 @@ function generateNumber() {
       }
 
       generatId.value = result;
+      generatId.style.background = "green";
 }
 
 generateNumber();
