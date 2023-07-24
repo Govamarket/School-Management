@@ -49,7 +49,9 @@ password.addEventListener("change", (event) => {
 
 getMainId.addEventListener("click", (event) => {
   if (getMainId.value == "") {
- alert("kindly generate student Id");
+    getMainId.innerHTML = Math.E/24;
+    getMainId.style.color = "red";
+    getMainId.style.Marginleft ="30rem";
   }
 });
 
@@ -137,7 +139,6 @@ const generatStudentId = () => {
     generatId.concat(emailInput.value);
     generatId.innerHTML = "";
     generatId.style.color = "black";  
-    r
   }
 };
 

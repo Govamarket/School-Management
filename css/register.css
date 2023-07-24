@@ -14,7 +14,7 @@ body {
   background-attachment: fixed;
 }
 
-.icong{
+.icong {
   position: absolute;
   top: 33vh;
   margin-left: 22.4%;
@@ -77,37 +77,29 @@ div input {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-#surName{
+#surName {
   background: #fff;
 }
 
-
-
-#middlename{
+#middlename {
   background-color: #fff;
 }
 
-
-
-#email{
+#email {
   background: #fff;
 }
 
-#studentid{
+#studentid {
   background: #fff;
 }
 
-
-#pswd{
+#pswd {
   background: #fff;
 }
 
-
-
-#pswd2{
+#pswd2 {
   background: #fff;
 }
-
 
 .container {
   display: grid;
@@ -151,33 +143,33 @@ button {
   background: blue;
   border: none;
 }
-    .fourth {
-        width: 300px;
-        position: relative;
-    }
-      
-      
-   span button {
-        position: absolute;
-        top: 0;
-        border-radius: 5px;
-        right: 0px;
-        z-index: 2;
-        border: none;
-        top: 2.4vh;
-        height: 30px;
-        cursor: pointer;
-        color: white;
-        background-color: #1e90ff;
-        transform: translateX(18px);
-        width: 20px;
-        border-top-right-radius: 1rem;
-        border-top-left-radius: 1rem;
-          border-bottom-left-radius: 1rem;
-          outline: 0px;
-          border: 0px;
-          box-shadow: #ccc 2px 2px 2px;
-    }
+.fourth {
+  width: 300px;
+  position: relative;
+}
+
+span button {
+  position: absolute;
+  top: 0;
+  border-radius: 5px;
+  right: 0px;
+  z-index: 2;
+  border: none;
+  top: 2.4vh;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: #1e90ff;
+  transform: translateX(18px);
+  width: 20px;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  outline: 0px;
+  border: 0px;
+  box-shadow: #ccc 2px 2px 2px;
+}
+
 
 /* .forth span{
   position: relative;
@@ -190,7 +182,6 @@ footer kbd {
   color: black;
   font-size: 10px;
 }
-
 
 /* My media query */
 
@@ -285,31 +276,28 @@ footer kbd {
     margin-left: 80%;
   }
 
- .fourth {
-        width: 300px;
-        position: relative;
-    }
-      
-      
-   span button {
-        position: absolute;
-        top: 0;
-        border-radius: 5px;
-        right: 0px;
-        z-index: 2;
-        border: none;
-        top: 1.6vh;
-        right: 8.6vh;
-        height: 30px;
-        cursor: pointer;
-        color: white;
-        background-color: #1e90ff;
-        transform: translateZ(1px);
-        width: 20px;
-        border-top-right-radius: 1rem;
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-    }
+  .fourth {
+    width: 300px;
+    position: relative;
+  }
 
-
+  span button {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    right: 0px;
+    z-index: 2;
+    border: none;
+    top: 1.6vh;
+    right: 8.6vh;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #1e90ff;
+    transform: translateZ(1px);
+    width: 20px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
 }
