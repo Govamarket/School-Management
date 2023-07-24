@@ -49,20 +49,21 @@ password.addEventListener("change", (event) => {
 });
 
 function generateNumber() {
-      // Define the characters that can be used in the random string
-      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-      let result = "";
-      const length = 10; // Adjust the length of the random string as per your requirement
+  // Define the characters that can be used in the random string
+  const characters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let result = "";
+  const length = 10; // Adjust the length of the random string as per your requirement
 
-      for (let i = 0; i < length; i++) {
-          const randomIndex = Math.floor(Math.random() * characters.length);
-          result += characters.charAt(randomIndex);
-      }
+  for (let i = 0; i < length; i++) {
+    const randomIndex = Math.floor(Math.random() * characters.length);
+    result += characters.charAt(randomIndex);
+  }
 
-      generatId.value = result;
-      generatId.style.background = "green";
-      buttonId.style.background = "green";
-      return false;
+  generatId.value = result;
+  generatId.style.background = "green";
+  buttonId.style.background = "green";
+  return false;
 }
 
 generateNumber();
@@ -159,38 +160,36 @@ registerButton.addEventListener("click", (event) => {
     generatId.value == "" ||
     password.value == "" ||
     passwordConfirmation.value == ""
-  ){
-   inputSurnaValid();
-  inputMiddleName();
-  emailValidator();
-  paswordValid();
-  LevelValidation();
-  generatStudentId();
-  generateNumber();
-  alert("field the empty input");
-  surName.style.background = "red";
-  surName.style.color = "#ccc";
-  middleName.style.background = "red";
-  middleName.style.color = "#ccc";
-  emailInput.style.background = "red";
-  emailInput.style.color = "#ccc";
-  generatId.style.background = "red";
-  generatId.style.color = "#ccc";
-  password.style.background = "red";
-  password.style.color = "#ccc";
-  levelValid.style.background = "red";
-  levelValid.style.color = "#ccc";
-  }else{
-  // registerButton.style = "disabled";
-  localStorage.setItem("#surname", JSON.stringify(inputSurnaValid.value));
-  localStorage.setItem("#middlename", JSON.stringify(inputMiddleName.value));
-  localStorage.setItem("#email", JSON.stringify(emailValidator.value));
-  localStorage.setItem("#studentid", JSON.stringify(generatStudentId.value));
-  localStorage.setItem("#level", JSON.stringify(LevelValidation.value));
-  localStorage.setItem("#pswd", JSON.stringify(paswordValid.value));
-  alert("data currently in local store");
+  ) {
+    inputSurnaValid();
+    inputMiddleName();
+    emailValidator();
+    paswordValid();
+    LevelValidation();
+    generatStudentId();
+    generateNumber();
+    alert("field the empty input");
+    surName.style.background = "red";
+    surName.style.color = "#ccc";
+    middleName.style.background = "red";
+    middleName.style.color = "#ccc";
+    emailInput.style.background = "red";
+    emailInput.style.color = "#ccc";
+    generatId.style.background = "red";
+    generatId.style.color = "#ccc";
+    password.style.background = "red";
+    password.style.color = "#ccc";
+    levelValid.style.background = "red";
+    levelValid.style.color = "#ccc";
+  } else {
+    localStorage.setItem("#surname", JSON.stringify(inputSurnaValid.value));
+    localStorage.setItem("#middlename", JSON.stringify(inputMiddleName.value));
+    localStorage.setItem("#email", JSON.stringify(emailValidator.value));
+    localStorage.setItem("#studentid", JSON.stringify(generatStudentId.value));
+    localStorage.setItem("#level", JSON.stringify(LevelValidation.value));
+    localStorage.setItem("#pswd", JSON.stringify(paswordValid.value));
+    window.location.href ="login.html";
   }
-  
 });
 
 // Validation of all fields
