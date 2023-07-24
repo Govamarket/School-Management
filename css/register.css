@@ -185,7 +185,7 @@ footer kbd {
 
 /* My media query */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .container {
     display: grid;
     grid-template-columns: auto;
@@ -253,6 +253,130 @@ footer kbd {
     background-blend-mode: color-burn;
     line-height: 2px;
     position: relative;
+  }
+
+  body {
+    background-blend-mode: darken;
+    background-image: url(../img/soso.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: fixed;
+    background-position: contain;
+    background-attachment: fixed;
+    height: inherit;
+    top: 10rem;
+  }
+
+  .click {
+    width: 1rem;
+    background: blue;
+    height: 1rem;
+    position: absolute;
+    top: 19.2vh;
+    margin-left: 80%;
+  }
+
+  .fourth {
+    width: 300px;
+    position: relative;
+  }
+
+  span button {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    right: 0px;
+    z-index: 2;
+    border: none;
+    top: 1.6vh;
+    right: 8.6vh;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: #1e90ff;
+    transform: translateZ(1px);
+    width: 20px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .header h3{
+    display: flex;
+    justify-content: center;
+    margin-right: 5%;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+    background-blend-mode: color-burn;
+    position: relative;
+  }
+
+  .logo img {
+    width: 10%;
+    margin-left: 4px;
+    margin-top: 1rem;
+  }
+
+  input {
+    padding: 1rem;
+    margin: 3px;
+    width: 16rem;
+    background: #fff;
+    color: black;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+    background-image: url(../img/soso.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    border-color: #fff;
+  }
+
+  .control {
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+    margin-right: 7%;
+    gap: 1rem;
+    padding-top: 1px;
+  }
+
+  footer kbd {
+    color: #fff;
+  }
+
+  div input {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    border: 0;
+    padding: 12px;
+    outline: none;
+    background: #fff;
+    box-shadow: 2px 2px 2px rgb(2, 2, 2);
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+    background-blend-mode: color-burn;
+    line-height: 2px;
+    position: relative;
+    margin-left: 10%;
   }
 
   body {
