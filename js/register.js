@@ -3,8 +3,8 @@ const surName = document.querySelector("#surname");
 const middleName = document.querySelector("#middlename");
 const emailInput = document.querySelector("#email");
 const generatId = document.querySelector("#studentid");
-const password = document.querySelector("#pswd");
 const levelValid = document.querySelector("#level");
+const password = document.querySelector("#pswd");
 const registerButton = document.querySelector("#signup");
 const singIn = document.querySelector("#signin");
 const validRegex =
@@ -159,29 +159,37 @@ registerButton.addEventListener("click", (event) => {
     generatId.value == "" ||
     password.value == "" ||
     passwordConfirmation.value == ""
-  )
-    inputSurnaValid();
+  ){
+   inputSurnaValid();
   inputMiddleName();
   emailValidator();
   paswordValid();
   LevelValidation();
   generatStudentId();
   generateNumber();
-  {
-    alert("field the empty input");
-    surName.style.background = "red";
-    surName.style.color = "#ccc";
-    middleName.style.background = "red";
-    middleName.style.color = "#ccc";
-    emailInput.style.background = "red";
-    emailInput.style.color = "#ccc";
-    generatId.style.background = "red";
-    generatId.style.color = "#ccc";
-    password.style.background = "red";
-    password.style.color = "#ccc";
-    levelValid.style.background = "red";
-    levelValid.style.color = "#ccc";
+  alert("field the empty input");
+  surName.style.background = "red";
+  surName.style.color = "#ccc";
+  middleName.style.background = "red";
+  middleName.style.color = "#ccc";
+  emailInput.style.background = "red";
+  emailInput.style.color = "#ccc";
+  generatId.style.background = "red";
+  generatId.style.color = "#ccc";
+  password.style.background = "red";
+  password.style.color = "#ccc";
+  levelValid.style.background = "red";
+  levelValid.style.color = "#ccc";
+  }else{
+  registerButton.style = "disabled";
+  localStorage.setItem("#surname", JSON.stringify(inputSurnaValid.value));
+  localStorage.setItem("#middlename", JSON.stringify(inputMiddleName.value));
+  localStorage.setItem("#email", JSON.stringify(emailValidator.value));
+  localStorage.setItem("#studentid", JSON.stringify(generatStudentId.value));
+  localStorage.setItem("#level", JSON.stringify(LevelValidation.value));
+  localStorage.setItem("#pswd", JSON.stringify(paswordValid.value));
   }
+  
 });
 
 // Validation of all fields
