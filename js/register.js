@@ -7,7 +7,6 @@ const password = document.querySelector("#pswd");
 const levelValid = document.querySelector("#level");
 const registerButton = document.querySelector("#signup");
 const singIn = document.querySelector("#signin");
-const getMainId = document.querySelector("#get");
 const validRegex =
   /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
@@ -18,7 +17,7 @@ surName.addEventListener("change", (event) => {
   }, 2000);
 });
 
-generatId.addEventListener("change", (event) => {
+generatId.addEventListener("onclick", (event) => {
   generatStudentId();
 });
 
@@ -45,15 +44,21 @@ password.addEventListener("change", (event) => {
   }, 2000);
 });
 
+function generateNumber() {
+      // Define the characters that can be used in the random string
+      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      let result = '';
+      const length = 10; // Adjust the length of the random string as per your requirement
 
+      for (let i = 0; i < length; i++) {
+          const randomIndex = Math.floor(Math.random() * characters.length);
+          result += characters.charAt(randomIndex);
+      }
 
-getMainId.addEventListener("click", (event) => {
-  if (getMainId.value == "") {
-    getMainId.innerHTML = Math.E/24;
-    getMainId.style.color = "red";
-    getMainId.style.Marginleft ="30rem";
-  }
-});
+      generatId.value = result;
+}
+
+generateNumber();
 
 // Validating error messages javascript
 
@@ -135,10 +140,6 @@ const generatStudentId = () => {
     generatId.style.background = "white";
     generatId.style.color = "black";
     return false;
-  } else {
-    generatId.concat(emailInput.value);
-    generatId.innerHTML = "";
-    generatId.style.color = "black";  
   }
 };
 
@@ -158,6 +159,7 @@ registerButton.addEventListener("click", (event) => {
   paswordValid();
   LevelValidation();
   generatStudentId();
+  generateNumber();
   {
     alert("field the empty input");
     surName.style.background = "red";
