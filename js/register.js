@@ -181,13 +181,14 @@ registerButton.addEventListener("click", (event) => {
   levelValid.style.background = "red";
   levelValid.style.color = "#ccc";
   }else{
-  registerButton.style = "disabled";
+  // registerButton.style = "disabled";
   localStorage.setItem("#surname", JSON.stringify(inputSurnaValid.value));
   localStorage.setItem("#middlename", JSON.stringify(inputMiddleName.value));
   localStorage.setItem("#email", JSON.stringify(emailValidator.value));
   localStorage.setItem("#studentid", JSON.stringify(generatStudentId.value));
   localStorage.setItem("#level", JSON.stringify(LevelValidation.value));
   localStorage.setItem("#pswd", JSON.stringify(paswordValid.value));
+  alert("data currently in local store");
   }
   
 });
