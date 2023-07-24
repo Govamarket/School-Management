@@ -188,6 +188,7 @@ registerButton.addEventListener("click", (event) => {
     localStorage.setItem("#studentid", JSON.stringify(generatStudentId.value));
     localStorage.setItem("#level", JSON.stringify(LevelValidation.value));
     localStorage.setItem("#pswd", JSON.stringify(paswordValid.value));
+    alert("Kindly verif from the login page");
     window.location.href ="login.html";
   }
 });
